@@ -60,7 +60,7 @@ const BookingSummary = ({
               {selectedSeatsToBook.length > 0 &&
                 selectedSeatsToBook.map((seatObject, seatIndex) => (
                   <span key={seatIndex}>
-                    {theatreRowNames[seatObject.rowIndex]}
+                    {theatreRowNames[seatObject.rowIndex - 1]}
                     {seatObject.columnIndex} ,
                   </span>
                 ))}
